@@ -4,8 +4,11 @@
   "description": "ShowTrackr landing page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/main.css -w"
   },
   "author": "Alexander Melo",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
 }
