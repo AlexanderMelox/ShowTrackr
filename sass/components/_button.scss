@@ -1,0 +1,17 @@
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: $color-white;
+    padding: .6rem 1.7rem;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    box-shadow: 0 2px 4px 0 rgba(60, 9, 179, 0.3);
+  }
+}
