@@ -1,4 +1,5 @@
 .header {
+
   &__squares {
     position: absolute;
     z-index: -1;
@@ -9,8 +10,9 @@
     }
 
     &--right {
-      top: 50rem;
-      right: -20rem;
+      top: 45rem;
+      right: 0;
+      width: 20rem;
     }
   }
 

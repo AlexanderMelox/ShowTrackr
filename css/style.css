@@ -106,8 +106,9 @@ p {
     top: 98rem;
     width: 9rem; }
   .header__squares--right {
-    top: 50rem;
-    right: -20rem; }
+    top: 45rem;
+    right: 0;
+    width: 20rem; }
 
 .header__form {
   width: 100%;
