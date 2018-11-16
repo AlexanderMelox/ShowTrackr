@@ -19,3 +19,20 @@ a:link,
 a:visited {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-text-light-gray;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color-text-light-gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color-text-light-gray;
+}

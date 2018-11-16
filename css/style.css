@@ -15,12 +15,41 @@ a:link,
 a:visited {
   text-decoration: none; }
 
+img {
+  max-width: 100%; }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #010101;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #010101; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #010101; }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
   font-weight: 300;
   color: #000;
   font-size: 1.8rem; }
+
+p {
+  font-size: 1.8rem;
+  letter-spacing: normal; }
+
+.heading-primary {
+  font-weight: 900;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 4.2rem;
+  font-stretch: normal;
+  line-height: 1.14; }
 
 .text-primary {
   color: #540cfa; }
@@ -32,8 +61,6 @@ body {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.97); }
   .nav__brand {
     font-weight: bold;
@@ -52,6 +79,50 @@ body {
   font-weight: 600;
   text-align: center; }
 
+.btn--form, .btn--form {
+  flex: 1 0 auto;
+  font-size: 1.6rem;
+  font: inherit;
+  outline: none;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #540cfa;
+  color: #fff;
+  font-weight: bold; }
+
 .btn--primary {
   background-color: #540cfa;
   box-shadow: 0 2px 4px 0 rgba(60, 9, 179, 0.3); }
+
+.container {
+  width: 91.4%;
+  margin: 0 auto; }
+
+.header__form {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
+  position: relative; }
+  .header__form-input {
+    flex: 0 0 55%;
+    outline: 0;
+    font-size: 1.6rem;
+    color: #010101;
+    opacity: .3;
+    padding: 2.5rem 0 1rem 1.5rem;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: 0; }
+  .header__form-label {
+    position: absolute;
+    top: .8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #540cfa;
+    left: 1.5rem; }
