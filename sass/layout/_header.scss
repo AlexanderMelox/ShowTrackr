@@ -1,4 +1,19 @@
 .header {
+  &__squares {
+    position: absolute;
+    z-index: -1;
+
+    &--left {
+      top: 98rem;
+      width: 9rem;
+    }
+
+    &--right {
+      top: 50rem;
+      right: -20rem;
+    }
+  }
+
   &__text-container {
 
   }
@@ -66,9 +81,7 @@
   }
 
   &__iphone-img {
-    max-width: 300px;
     display: block;
     margin: 0 auto;
-    max-height: 600px;
   }
 }
