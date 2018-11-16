@@ -11,11 +11,21 @@ p {
   letter-spacing: normal;
 }
 
-.heading-primary {
+.heading-primary,
+.heading-secondary {
   font-weight: 900;
+  font-stretch: normal;
+  line-height: 1.14;
+}
+
+.heading-primary {
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 4.2rem;
-  font-stretch: normal;
-  line-height: 1.14;
+}
+
+.heading-secondary {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 3.5rem;
 }
