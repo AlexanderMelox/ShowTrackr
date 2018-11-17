@@ -107,10 +107,9 @@ p {
   padding: 1.5rem 0;
   font-size: 1.6rem; }
 
-.btn--form, .btn--form {
-  flex: 1 0 auto;
-  font-size: 1.6rem;
-  font: inherit;
+.btn--form {
+  flex: 1 1 auto;
+  font-size: 1.4rem;
   outline: none;
   border: none;
   border-top-right-radius: 4px;
