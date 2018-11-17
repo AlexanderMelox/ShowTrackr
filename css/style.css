@@ -35,6 +35,12 @@ img {
 .fas {
   padding-left: 1.5rem; }
 
+.slick-arrow {
+  display: none !important; }
+
+.slick-slide {
+  height: 33rem; }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
@@ -156,6 +162,9 @@ p {
     font-weight: bold;
     color: #540cfa;
     left: 1.5rem; }
+
+.tv-shows__thumbnail {
+  height: 33rem !important; }
 
 .row {
   width: 91.4%;
