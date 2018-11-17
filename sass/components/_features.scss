@@ -3,4 +3,19 @@
     font-size: 1.6rem;
     color: lighten($color-black, 20%);
   }
+
+  &__info {
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    .feature {
+      margin: 5rem 0;
+
+      &__image {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
 }

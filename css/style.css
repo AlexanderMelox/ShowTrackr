@@ -32,6 +32,9 @@ img {
   /* Microsoft Edge */
   color: #b3b3b3; }
 
+.fas {
+  padding-left: 1.5rem; }
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
@@ -59,6 +62,11 @@ p {
   margin-bottom: 2rem;
   font-size: 3.5rem; }
 
+.heading-tertiary {
+  margin-bottom: .8rem;
+  font-weight: bold;
+  font-size: 1.8rem; }
+
 .text-primary {
   color: #540cfa; }
 
@@ -85,7 +93,13 @@ p {
   border-radius: 4px;
   font-size: 1.4rem;
   font-weight: 600;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
+
+.btn--link:link, .btn--link:visited {
+  color: #540cfa;
+  padding: 1.5rem 0;
+  font-size: 1.6rem; }
 
 .btn--form, .btn--form {
   flex: 1 0 auto;
@@ -102,6 +116,19 @@ p {
 .btn--primary {
   background-color: #540cfa;
   box-shadow: 0 2px 4px 0 rgba(60, 9, 179, 0.3); }
+
+.features__title {
+  font-size: 1.6rem;
+  color: #333333; }
+
+.features__info {
+  margin-bottom: 1rem; }
+
+.features__list .feature {
+  margin: 5rem 0; }
+  .features__list .feature__image {
+    width: 6rem;
+    height: 6rem; }
 
 .row {
   width: 91.4%;
