@@ -39,7 +39,7 @@ img {
   display: none !important; }
 
 .slick-slide {
-  height: 33rem; }
+  height: 26.45rem; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -164,7 +164,7 @@ p {
     left: 1.5rem; }
 
 .tv-shows__thumbnail {
-  height: 33rem !important; }
+  height: 100%; }
 
 .row {
   width: 91.4%;
