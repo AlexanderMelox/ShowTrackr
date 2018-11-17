@@ -73,6 +73,15 @@ p {
   font-weight: bold;
   font-size: 1.8rem; }
 
+.section-title {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 1.19;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+  .section-title--white {
+    color: #fff; }
+
 .text-primary {
   color: #540cfa; }
 
@@ -164,6 +173,31 @@ p {
 
 .tv-shows__thumbnail {
   height: 100%; }
+
+.showcase {
+  padding-top: 6rem;
+  padding-bottom: 7rem; }
+  .showcase__paragraph {
+    font-size: 1.6rem; }
+  .showcase__list {
+    list-style-type: none;
+    margin-top: 3rem;
+    margin-bottom: 4.3rem;
+    font-weight: 600; }
+    .showcase__list-item {
+      display: flex;
+      align-items: center;
+      padding: 1.7rem; }
+      .showcase__list-item:not(:last-child) {
+        margin-bottom: 1.5rem; }
+      .showcase__list-item:not(:first-child) {
+        color: gray; }
+      .showcase__list-item--active {
+        border-radius: 4px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
+  .showcase__icon {
+    height: 2rem;
+    margin-right: 1.7rem; }
 
 .row {
   width: 91.4%;

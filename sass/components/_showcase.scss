@@ -1,0 +1,39 @@
+.showcase {
+  padding-top: 6rem;
+  padding-bottom: 7rem;
+
+  &__paragraph {
+    font-size: 1.6rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin-top: 3rem;
+    margin-bottom: 4.3rem;
+    font-weight: 600;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 1.7rem;
+
+      &:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      &:not(:first-child) {
+        color: lighten($color-black, 50%);
+      }
+
+      &--active {
+        border-radius: 4px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    margin-right: 1.7rem;
+  }
+}

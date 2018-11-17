@@ -35,3 +35,15 @@ p {
   font-weight: bold;
   font-size: 1.8rem;
 }
+
+.section-title {
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 1.19;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  &--white {
+    color: $color-white;
+  }
+}
