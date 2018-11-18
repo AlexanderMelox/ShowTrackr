@@ -1,0 +1,16 @@
+.community {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  background-color: $color-black;
+
+  &__title {
+    color: lighten($color-white, 20%);
+    font-size: 1.6rem;
+  }
+
+  &__paragraph {
+    color: lighten($color-white, 20%);
+    font-weight: normal;
+    margin-bottom: 4rem;
+  }
+}

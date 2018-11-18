@@ -1,0 +1,32 @@
+.testimonial {
+  width: 26rem;
+  min-height: 21rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.08);
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    color: $color-white;
+    font-weight: 600;
+  }
+
+  &__social-icon {
+    width: 1.8rem;
+    height: auto;
+  }
+
+  &__text {
+
+  }
+}

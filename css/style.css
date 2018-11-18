@@ -131,6 +131,10 @@ p {
   background-color: #540cfa;
   box-shadow: 0 2px 4px 0 rgba(60, 9, 179, 0.3); }
 
+.btn--lg:link, .btn--lg:visited {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.6rem; }
+
 .features__title {
   font-size: 1.6rem;
   color: #333333; }
@@ -198,6 +202,38 @@ p {
   .showcase__icon {
     height: 2rem;
     margin-right: 1.7rem; }
+
+.community {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  background-color: #000; }
+  .community__title {
+    color: white;
+    font-size: 1.6rem; }
+  .community__paragraph {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 4rem; }
+
+.testimonial {
+  width: 26rem;
+  min-height: 21rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.08); }
+  .testimonial__header {
+    display: flex;
+    align-items: center; }
+  .testimonial__image {
+    width: 3.6rem;
+    height: 3.6rem; }
+  .testimonial__name {
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600; }
+  .testimonial__social-icon {
+    width: 1.8rem;
+    height: auto; }
 
 .row {
   width: 91.4%;
