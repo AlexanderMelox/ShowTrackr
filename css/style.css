@@ -85,6 +85,9 @@ p {
 .text-primary {
   color: #540cfa; }
 
+.text-center {
+  text-align: center; }
+
 .nav {
   height: 5rem;
   padding: 1.3rem 1.6rem;
@@ -255,6 +258,10 @@ p {
     font-size: 1.2rem;
     font-weight: normal;
     margin-top: auto; }
+
+.get-started {
+  padding-top: 7rem;
+  padding-bottom: 5rem; }
 
 .row {
   width: 91.4%;

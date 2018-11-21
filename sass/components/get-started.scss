@@ -1,0 +1,14 @@
+.get-started {
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+
+  &__title {
+    color: lighten($color-black, 20%);
+    font-size: 1.6rem;
+    line-height: normal;
+  }
+
+  &__paragraph {
+    font-weight: normal;
+  }
+}
