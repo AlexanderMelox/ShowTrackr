@@ -1,9 +1,11 @@
 .tv-shows {
   &__slider {
-    
+    display: flex;
+    overflow-x: scroll;
   }
 
   &__thumbnail {
-    height: 100%;
+    width: auto;
+    height: 33rem; 
   }
 }

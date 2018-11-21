@@ -35,12 +35,6 @@ img {
 .fas {
   padding-left: 1.5rem; }
 
-.slick-arrow {
-  display: none !important; }
-
-.slick-slide {
-  height: 26.45rem; }
-
 body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.5;
@@ -182,8 +176,13 @@ a:visited {
     color: #540cfa;
     left: 1.5rem; }
 
+.tv-shows__slider {
+  display: flex;
+  overflow-x: scroll; }
+
 .tv-shows__thumbnail {
-  height: 100%; }
+  width: auto;
+  height: 33rem; }
 
 .showcase {
   padding-top: 6rem;
