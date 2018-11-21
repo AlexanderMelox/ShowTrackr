@@ -52,6 +52,10 @@ p {
   font-size: 1.8rem;
   letter-spacing: normal; }
 
+a:link,
+a:visited {
+  color: #540cfa; }
+
 .heading-primary,
 .heading-secondary {
   font-weight: 900;
@@ -262,6 +266,16 @@ p {
 .get-started {
   padding-top: 7rem;
   padding-bottom: 5rem; }
+  .get-started__title {
+    color: #333333;
+    font-size: 1.6rem;
+    line-height: normal; }
+  .get-started__paragraph {
+    font-weight: normal;
+    color: #333333; }
+  .get-started .cta-form {
+    margin-top: 3rem;
+    margin-bottom: 0; }
 
 .row {
   width: 91.4%;
@@ -303,3 +317,21 @@ p {
 .header__iphone-img {
   display: block;
   margin: 0 auto; }
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 4rem; }
+  .footer__social-icons-list {
+    list-style-type: none;
+    display: flex;
+    width: 15rem;
+    margin: 0 auto;
+    justify-content: space-around; }
+    .footer__social-icons-list img {
+      height: 1.6rem;
+      width: auto; }
+  .footer__copyright {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    font-weight: normal;
+    margin-top: 3rem; }

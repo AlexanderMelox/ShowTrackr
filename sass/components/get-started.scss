@@ -10,5 +10,11 @@
 
   &__paragraph {
     font-weight: normal;
+    color: lighten($color-black, 20%);
+  }
+
+  .cta-form {
+    margin-top: 3rem;
+    margin-bottom: 0;
   }
 }

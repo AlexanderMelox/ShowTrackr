@@ -11,6 +11,11 @@ p {
   letter-spacing: normal;
 }
 
+a:link,
+a:visited {
+  color: $color-primary;
+}
+
 .heading-primary,
 .heading-secondary {
   font-weight: 900;

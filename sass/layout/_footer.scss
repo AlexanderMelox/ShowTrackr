@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+
+  &__social-icons-list {
+    list-style-type: none;
+    display: flex;
+    width: 15rem;
+    margin: 0 auto;
+    justify-content: space-around;
+
+    img {
+      height: 1.6rem;
+      width: auto;
+    }
+  }
+
+  &__copyright {
+    font-size: 1.1rem;
+    color: lighten($color-black, 70%);
+    font-weight: normal;
+    margin-top: 3rem;
+  }
+}
