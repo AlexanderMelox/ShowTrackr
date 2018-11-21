@@ -1,4 +1,9 @@
 .row {
   width: 91.4%;
+  max-width: 110rem;
   margin: 0 auto;
+
+  @media only screen and (min-width: $tablet-size) {
+    width: 76.4%;
+  }
 }

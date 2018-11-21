@@ -279,7 +279,11 @@ a:visited {
 
 .row {
   width: 91.4%;
+  max-width: 110rem;
   margin: 0 auto; }
+  @media only screen and (min-width: 37.5em) {
+    .row {
+      width: 76.4%; } }
 
 .header__squares {
   position: absolute;

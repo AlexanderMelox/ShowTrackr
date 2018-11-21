@@ -5,3 +5,6 @@ $color-primary-light: lighten($color-primary, 0.5);
 $color-black: #000;
 $color-white: #fff;
 $color-text-light-gray: lighten($color-black, 70%);
+
+// Media queries
+$tablet-size: 37.5em; // 600px
