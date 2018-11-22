@@ -8,6 +8,11 @@
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
   position: relative;
+  max-width: 45rem;
+
+  @media only screen and (min-width: $desktop-size) {
+    margin-top: 3rem;
+  }
 
   &__input {
     flex: 0 0 55%;

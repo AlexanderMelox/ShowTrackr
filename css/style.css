@@ -61,6 +61,11 @@ a:visited {
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 4.2rem; }
+  @media only screen and (min-width: 56.25em) {
+    .heading-primary {
+      font-size: 7rem;
+      margin-top: 0;
+      line-height: 1.03; } }
 
 .heading-secondary {
   margin-top: 1rem;
@@ -103,7 +108,7 @@ a:visited {
   transition: .5s ease-in-out; }
   @media only screen and (min-width: 56.25em) {
     .nav {
-      padding: 1.3rem 11.8%; } }
+      padding: 1.3rem 10%; } }
   .nav__brand {
     font-weight: bold;
     font-stretch: normal;
@@ -197,7 +202,11 @@ a:visited {
   margin-bottom: 3rem;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 6px 12px 0 rgba(0, 0, 0, 0.05);
-  position: relative; }
+  position: relative;
+  max-width: 45rem; }
+  @media only screen and (min-width: 56.25em) {
+    .cta-form {
+      margin-top: 3rem; } }
   .cta-form__input {
     flex: 0 0 55%;
     outline: 0;
@@ -321,7 +330,12 @@ a:visited {
   margin: 0 auto; }
   @media only screen and (min-width: 37.5em) {
     .row {
-      width: 76.4%; } }
+      width: 80%; } }
+
+@media only screen and (min-width: 56.25em) {
+  .header__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
 
 .header__squares {
   position: absolute;
@@ -329,13 +343,33 @@ a:visited {
   .header__squares--left {
     top: 98rem;
     width: 9rem; }
+    @media only screen and (min-width: 56.25em) {
+      .header__squares--left {
+        top: 69.8rem; } }
   .header__squares--right {
     top: 45rem;
     right: 0;
     width: 20rem; }
+    @media only screen and (min-width: 56.25em) {
+      .header__squares--right {
+        width: 40rem;
+        top: -20rem; } }
+
+.header__text-container {
+  align-self: center; }
+
+.header__text {
+  max-width: 47rem; }
+  @media only screen and (min-width: 56.25em) {
+    .header__text {
+      font-size: 2.1rem; } }
 
 .header__compatible-with {
-  width: 100%; }
+  width: 100%;
+  max-width: 40rem; }
+  @media only screen and (min-width: 56.25em) {
+    .header__compatible-with {
+      margin-top: 13rem; } }
   .header__compatible-with-title {
     color: #b3b3b3;
     display: block;
@@ -362,6 +396,9 @@ a:visited {
   @media only screen and (min-width: 37.5em) {
     .header__iphone-img {
       max-height: 62rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .header__iphone-img {
+      margin-right: 12.3rem; } }
 
 .footer {
   padding-top: 5rem;

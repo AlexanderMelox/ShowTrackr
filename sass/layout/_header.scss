@@ -1,4 +1,11 @@
 .header {
+  &__container {
+    
+    @media only screen and (min-width: $desktop-size) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
   &__squares {
     position: absolute;
@@ -7,21 +14,41 @@
     &--left {
       top: 98rem;
       width: 9rem;
-    }
+      @media only screen and (min-width: $desktop-size) {
+        top: 69.8rem;
+      }
+    } 
 
     &--right {
       top: 45rem;
       right: 0;
       width: 20rem;
+
+      @media only screen and (min-width: $desktop-size) {
+        width: 40rem;
+        top: -20rem;
+      }
     }
   }
 
   &__text-container {
+    align-self: center;
+  }
 
+  &__text {
+    max-width: 47rem;
+    @media only screen and (min-width: $desktop-size) {
+      font-size: 2.1rem;
+    }
   }
   
   &__compatible-with {
     width: 100%;
+    max-width: 40rem;
+
+    @media only screen and (min-width: $desktop-size) {
+      margin-top: 13rem;
+    }
 
     &-title {
       color: $color-text-light-gray;
@@ -56,6 +83,10 @@
 
     @media only screen and (min-width: $tablet-size) {
       max-height: 62rem;
+    }
+
+    @media only screen and (min-width: $desktop-size) {
+      margin-right: 12.3rem;
     }
   }
 }

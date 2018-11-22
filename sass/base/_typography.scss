@@ -27,6 +27,12 @@ a:visited {
   margin-top: 4rem;
   margin-bottom: 2rem;
   font-size: 4.2rem;
+
+  @media only screen and (min-width: $desktop-size){
+    font-size: 7rem;
+    margin-top: 0;
+    line-height: 1.03;
+  }
 }
 
 .heading-secondary {
