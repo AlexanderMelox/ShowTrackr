@@ -39,6 +39,13 @@ a:visited {
   margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 3.5rem;
+  max-width: 61rem;
+
+  @media only screen and (min-width: $desktop-size) {
+    font-size: 6rem;
+    margin: 0 auto;
+    line-height: 1.05;
+  }
 }
 
 .heading-tertiary {
