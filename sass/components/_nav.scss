@@ -1,18 +1,77 @@
 .nav {
   height: 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   padding: 1.3rem 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
   background-color: rgba(255, 255, 255, 0.97);
+  transition: .5s ease-in-out;
+
+  @media only screen and (min-width: $desktop-size) {
+    padding: 1.3rem 11.8%;
+  }
 
   &__brand {
     font-weight: bold;
     font-stretch: normal;
-    color: $color-black;
+    color: $color-black !important;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
+  }
+
+  &__navigation-list {
+    display: none;
+    list-style: none;
+
+    @media only screen and (min-width: $desktop-size) {
+      display: flex;
+    }
+  }
+
+  &__links:link, 
+  &__links:visited {
+    font-weight: normal;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $color-black;
+    padding: 1.6rem 3rem;
+  }
+
+  &__login:link,
+  &__login:visited {
+    display: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: $color-black;
+    padding: 3rem;
+    @media only screen and (min-width: $desktop-size) {
+      display: inline-block;
+    }
+  }
+
+  &.dark-mode {
+    background-color: #111;
+
+    .nav{
+      &__brand:link,
+      &__brand:visited,
+      &__login:link,
+      &__login:visited {
+        color: $color-white !important;
+      }
+
+      &__links:link,
+      &__links:visited {
+        color: lighten($color-black, 70%);
+      }
+    }
   }
 }

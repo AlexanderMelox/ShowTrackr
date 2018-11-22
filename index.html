@@ -18,7 +18,15 @@
 <body>
   <nav class="nav">
     <a href="#" class="nav__brand">Show<span class="text-primary">Trackr</span></a>
-    <a href="#" class="btn btn--primary">Get started</a>
+    <ul class="nav__navigation-list">
+      <li><a class="nav__links" href="#features">Features</a></li>
+      <li><a class="nav__links" href="#features">Community</a></li>
+      <li><a class="nav__links" href="#features">Get started</a></li>
+    </ul>
+    <div class="nav__button-groups">
+      <a href="#" class="nav__login">Log in</a>
+      <a href="#" class="btn btn--primary">Get started</a>
+    </div>
   </nav>
 
   <header class="header">
@@ -139,7 +147,7 @@
       </div>
     </section>
 
-    <section class="community">
+    <section class="community" data-waypoint="community">
       <div class="row">
         <div class="community__text-box">
           <span class="community__title">Community</span>
@@ -251,8 +259,13 @@
     </div>
   </footer>
 
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script defer 
     src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
-          
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  padding-top: 5rem; }
 
 body {
   box-sizing: border-box; }
@@ -88,19 +89,56 @@ a:visited {
 
 .nav {
   height: 5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   padding: 1.3rem 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.97); }
+  background-color: rgba(255, 255, 255, 0.97);
+  transition: .5s ease-in-out; }
+  @media only screen and (min-width: 56.25em) {
+    .nav {
+      padding: 1.3rem 11.8%; } }
   .nav__brand {
     font-weight: bold;
     font-stretch: normal;
-    color: #000;
+    color: #000 !important;
     line-height: normal;
     letter-spacing: normal;
     text-align: center; }
+  .nav__navigation-list {
+    display: none;
+    list-style: none; }
+    @media only screen and (min-width: 56.25em) {
+      .nav__navigation-list {
+        display: flex; } }
+  .nav__links:link, .nav__links:visited {
+    font-weight: normal;
+    display: inline-block;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000;
+    padding: 1.6rem 3rem; }
+  .nav__login:link, .nav__login:visited {
+    display: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+    padding: 3rem; }
+    @media only screen and (min-width: 56.25em) {
+      .nav__login:link, .nav__login:visited {
+        display: inline-block; } }
+  .nav.dark-mode {
+    background-color: #111; }
+    .nav.dark-mode .nav__brand:link, .nav.dark-mode .nav__brand:visited, .nav.dark-mode .nav__login:link, .nav.dark-mode .nav__login:visited {
+      color: #fff !important; }
+    .nav.dark-mode .nav__links:link, .nav.dark-mode .nav__links:visited {
+      color: #b3b3b3; }
 
 .btn:link, .btn:visited {
   text-decoration: none;
@@ -320,6 +358,9 @@ a:visited {
 .header__iphone-img {
   display: block;
   margin: 0 auto; }
+  @media only screen and (min-width: 37.5em) {
+    .header__iphone-img {
+      max-height: 62rem; } }
 
 .footer {
   padding-top: 5rem;
