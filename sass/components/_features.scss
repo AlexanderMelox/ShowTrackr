@@ -34,7 +34,10 @@
       grid-template-columns: 1fr 1fr 1fr;
     }   
     .feature {
-      margin: 5rem 0;
+      margin-top: 5rem;
+      &:last-child {
+        margin-bottom: 5rem;
+      }
       
       @media only screen and (min-width: $desktop-size) {
         padding: 8rem 3rem;

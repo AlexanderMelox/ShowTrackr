@@ -216,7 +216,9 @@ a:visited {
     .features__list {
       grid-template-columns: 1fr 1fr 1fr; } }
   .features__list .feature {
-    margin: 5rem 0; }
+    margin-top: 5rem; }
+    .features__list .feature:last-child {
+      margin-bottom: 5rem; }
     @media only screen and (min-width: 56.25em) {
       .features__list .feature {
         padding: 8rem 3rem;
@@ -260,6 +262,12 @@ a:visited {
 .tv-shows__slider {
   display: flex;
   overflow-x: scroll; }
+  .tv-shows__slider::-webkit-scrollbar {
+    width: 0 !important; }
+  @media only screen and (min-width: 56.25em) {
+    .tv-shows__slider {
+      overflow: hidden;
+      margin-left: -10rem; } }
 
 .tv-shows__thumbnail {
   width: auto;
@@ -354,8 +362,7 @@ a:visited {
     font-weight: normal;
     color: #333333; }
   .get-started .cta-form {
-    margin-top: 3rem;
-    margin-bottom: 0; }
+    margin: 3rem auto 0; }
 
 .row {
   width: 91.4%;
