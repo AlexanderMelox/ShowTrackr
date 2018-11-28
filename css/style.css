@@ -91,6 +91,10 @@ a:visited {
   margin-bottom: 2rem; }
   .section-title--white {
     color: #fff; }
+  @media only screen and (min-width: 56.25em) {
+    .section-title {
+      font-size: 4.6rem;
+      line-height: 1.09; } }
 
 .text-primary {
   color: #540cfa; }
@@ -275,28 +279,68 @@ a:visited {
 
 .showcase {
   padding-top: 6rem;
-  padding-bottom: 7rem; }
+  padding-bottom: 7rem;
+  overflow: hidden; }
+  @media only screen and (min-width: 56.25em) {
+    .showcase {
+      padding-top: 13rem;
+      padding-bottom: 20rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .showcase__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; } }
+  .showcase__text-box {
+    max-width: 46rem; }
+    @media only screen and (min-width: 56.25em) {
+      .showcase__text-box {
+        padding-top: 6rem; } }
   .showcase__paragraph {
     font-size: 1.6rem; }
+    @media only screen and (min-width: 56.25em) {
+      .showcase__paragraph {
+        font-size: 1.8rem;
+        opacity: 0.8;
+        line-height: 1.56; } }
   .showcase__list {
     list-style-type: none;
     margin-top: 3rem;
     margin-bottom: 4.3rem;
+    max-width: 34rem;
     font-weight: 600; }
     .showcase__list-item {
       display: flex;
       align-items: center;
-      padding: 1.7rem; }
+      padding: 1.7rem;
+      transition: all .5s; }
       .showcase__list-item:not(:last-child) {
         margin-bottom: 1.5rem; }
       .showcase__list-item:not(:first-child) {
         color: gray; }
-      .showcase__list-item--active {
+      .showcase__list-item--active, .showcase__list-item:hover {
         border-radius: 4px;
+        cursor: pointer;
+        color: #000;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.1); }
   .showcase__icon {
     height: 2rem;
     margin-right: 1.7rem; }
+  .showcase__image-container {
+    position: relative; }
+  @media only screen and (min-width: 56.25em) {
+    .showcase__app-desktop, .showcase__app-phone {
+      position: absolute; } }
+  .showcase__app-desktop {
+    display: none; }
+    @media only screen and (min-width: 56.25em) {
+      .showcase__app-desktop {
+        display: inline-block;
+        top: 0;
+        left: 10rem;
+        max-width: 70rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .showcase__app-phone {
+      max-width: 30rem;
+      top: 15rem; } }
 
 .community {
   padding-top: 7rem;

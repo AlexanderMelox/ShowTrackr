@@ -64,4 +64,9 @@ a:visited {
   &--white {
     color: $color-white;
   }
+
+  @media only screen and (min-width: $desktop-size) {
+    font-size: 4.6rem;
+    line-height: 1.09;
+  }
 }
